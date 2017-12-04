@@ -1,6 +1,6 @@
 """
 Vadim Lepilov: CEO
-David Cherednik: 
+David Cherednik: co-founder
 
 MAHE: multi-platform accessible hacker environment
 """
