@@ -1,4 +1,3 @@
-# import md5
 import hashlib
 
 counter = 0
