@@ -17,7 +17,7 @@ def md5_brut():
 		fileemd5 = hashlib.md5(password.encode()).hexdigest()
 		print("trying password number %s" %(password.strip()))		
 		# print("trying password number %d %s" %(counter, password.strip()))		
-		# counter += 1
+		# counter += 1mkvfmslgjkvfnslgjvf
 
 		if pass_in == fileemd5:
 			print("\n Match found. \n Password is: %s" % password)
