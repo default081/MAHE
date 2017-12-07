@@ -6,21 +6,28 @@ MAHE: multi-platform accessible hacker environment
 """
 # -*- coding: utf-8 -*- 
 import sys
+# import directory_brut.url_brut
 import auxiliary.description as d
+import directory_brut.url_brut as bru
 
 d.ASCII_ART()
 
 def main():
 	while True:
 		a = input('[MAHE] <=> ')
-		print(a)
+		# print(a)
 		if a == "-help" or a == "-h":
-			# print(d.help())
 			f = open('auxiliary/description.txt', 'r')
-			print (f.read())	
+			print (f.read())
+		if a == "scan":
+			bru.call()
+			break
 		if a == 'exit': break
 
-main()
+
+
+if(__name__ == '__main__'):
+	main()
 
 
 
