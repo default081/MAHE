@@ -31,16 +31,6 @@ if(__name__ == '__main__'):
 
 
 
-# import time
-# import sys
-# animation = "|/-\\"
-# for i in range(100):
-#     time.sleep(0.01)
-#     sys.stdout.write(animation[i % len(animation)])
-#     sys.stdout.flush()
-# print("End!")
-
-
 
 
 
