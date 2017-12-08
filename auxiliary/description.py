@@ -15,6 +15,5 @@ def ASCII_ART():
 """)
 
 def help():
-	f = open('description.txt', 'r')
+	f = open('auxiliary/description.txt', 'r')
 	print (f.read())
-# help()

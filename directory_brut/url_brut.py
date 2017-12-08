@@ -58,9 +58,7 @@ def call():
 
 	end_time = datetime.now()
 	print('Duration: {}'.format(end_time - start_time))
-	return None
 
-# call()
 
 
 # -----------------------------------
