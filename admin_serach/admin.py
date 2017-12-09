@@ -6,6 +6,8 @@ import sys
 event = threading.Event()
 event2 = threading.Event()
 
+
+
 def brut_part_1(ev):
 	File = open("../auxiliary/dictionary/admin-panels1.txt", "r")
 	for line in File:

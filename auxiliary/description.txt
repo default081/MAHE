@@ -1,3 +1,4 @@
 Options:
 	-h, --help : Show basic help message and 
-	
+	exit/quit : exit from the program
+

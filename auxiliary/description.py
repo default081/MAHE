@@ -1,7 +1,18 @@
-VERSION = 0.01
+import datetime
+from termcolor import colored, cprint
+import sys
+
+
+version = 0.01
 
 def ASCII_ART():
-	print(VERSION)
+	RED   = "\033[1;31m"
+	RESET = "\033[0;0m"
+	sys.stdout.write(RED)
+	print("Current version: " + str(version))	
+	sys.stdout.write(RESET)
+	
+	print(datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
 	print("Created by Vadim Lepilov and David Cherednik")
 	print ("""                                           
  ****     ****     **     **      ** ********
@@ -15,5 +26,5 @@ def ASCII_ART():
 """)
 
 def help():
-	f = open('auxiliary/description.txt', 'r')
-	print (f.read())
+	descript_file = open('auxiliary/description.txt', 'r')
+	print (descript_file.read())

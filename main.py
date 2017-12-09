@@ -14,33 +14,17 @@ d.ASCII_ART()
 def main():
 	while True:
 		a = input('[MAHE] <=> ')
-		# print(a)
 		if a == "-help" or a == "-h":
 			d.help()
 		if a == "scan":
 			bru.call()
-			break
-		if a == 'exit': break
+			# break
+		if a == 'exit' or a == "quit": break
 
 
-
-if(__name__ == '__main__'):
-	main()
-
-
-
-<<<<<<< HEAD
-=======
-
->>>>>>> 262b8f7e73837346e4b4ac2fab4f7d4fcfac7476
-
-
-
-
-
-
-
-
+main()
+# if(__name__ == '__main__'):
+# 	main()
 
 
 
