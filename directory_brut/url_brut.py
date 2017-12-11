@@ -41,7 +41,7 @@ def func2(ev, urll):
 def call():
 	start_time = datetime.now()
 
-	a = input("Enter Url: ")
+	a = input("-> Enter Url: ")
 
 	thr = threading.Thread(target=func, args=(event, a)) # initiate threading n1
 	thr2 = threading.Thread(target=func2, args=(event2, a)) #initiate threading n2

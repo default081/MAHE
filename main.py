@@ -6,25 +6,50 @@ MAHE: multi-platform accessible hacker environment
 """
 # -*- coding: utf-8 -*- 
 import sys
-import auxiliary.description as d
-import directory_brut.url_brut as bru
+import os
+import keyboard 
 
-d.ASCII_ART()
+import auxiliary.description as desc
+import directory_brut.url_brut as brut
+import admin_serach.admin as admin
+import md5_brut.md5_main as md5_crack
+
+desc.ASCII_ART()
 
 def main():
 	while True:
 		a = input('[MAHE] <=> ')
-		if a == "-help" or a == "-h":
-			d.help()
-		if a == "scan":
-			bru.call()
-			# break
-		if a == 'exit' or a == "quit": break
 
+		if (a == "adm search"): #admin fazzer
+			admin.admin_main()
+
+		if (a == "scan") #directory brut
+			brut.call()
+
+		if (a == "md5 compare"): #md5 hash compare
+			md5_crack.md5_brut()
+
+		
+		if (a == 'exit' or a == "quit"): 
+			break
+		if (a == "-help" or a == "-h"):
+			desc.help()
+		if (a == "clear"):
+			os.system('clear')
+		else:
+			print("Cant find the comand")
 
 main()
-# if(__name__ == '__main__'):
-# 	main()
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -9,7 +9,7 @@ event2 = threading.Event()
 
 
 def brut_part_1(ev):
-	File = open("../auxiliary/dictionary/admin-panels1.txt", "r")
+	File = open("auxiliary/dictionary/admin-panels1.txt", "r")
 	for line in File:
 		addres = 'http://maulnet.ru/' + line
 		try:
@@ -24,7 +24,7 @@ def brut_part_1(ev):
 
 
 def brut_part_two(ev):
-	File = open("../auxiliary/dictionary/admin-panels2.txt", "r")
+	File = open("auxiliary/dictionary/admin-panels2.txt", "r")
 	for line in File:
 		addres = 'http://maulnet.ru/' + line
 		try:
@@ -40,7 +40,7 @@ def brut_part_two(ev):
 
 def admin_main():
 	start_time = datetime.now()
-
+	syte = input("-> Enter URI: ")
 	thr = threading.Thread(target=brut_part_1, args=(event, )) # initiate threading n1
 	thr2 = threading.Thread(target=brut_part_two, args=(event2, )) #initiate threading n2
 
@@ -59,4 +59,4 @@ def admin_main():
 	end_time = datetime.now()
 	print('Duration: {}'.format(end_time - start_time))
 
-admin_main()
+# admin_main()
