@@ -23,7 +23,7 @@ def main():
 		if (a == "adm search"): #admin fazzer
 			admin.admin_main()
 
-		if (a == "scan") #directory brut
+		if (a == "scan"): #directory brut
 			brut.call()
 
 		if (a == "md5 compare"): #md5 hash compare
@@ -42,7 +42,12 @@ def main():
 main()
 
 
-
+#TODO
+#определение версии ОС
+#определение платформы и технологий
+#поиск всех доменов и субдоменов
+#порты
+#поиск shared hosting
 
 
 
