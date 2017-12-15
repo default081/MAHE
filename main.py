@@ -17,27 +17,31 @@ import md5_brut.md5_main as md5_crack
 desc.ASCII_ART()
 
 def main():
-	while True:
-		a = input('[MAHE] <=> ')
+	try:
+		while True:
+			a = input('[MAHE] <=> ')
 
-		if (a == "adm search"): #admin fazzer
-			admin.admin_main()
+			if (a == "adm search"): #admin fazzer
+				admin.admin_main()
 
-		if (a == "scan"): #directory brut
-			brut.call()
+			if (a == "scan"): #directory brut
+				brut.call()
 
-		if (a == "md5 compare"): #md5 hash compare
-			md5_crack.md5_brut()
+			if (a == "md5 compare"): #md5 hash compare
+				md5_crack.md5_brut()
 
-		
-		if (a == 'exit' or a == "quit"): 
-			break
-		if (a == "-help" or a == "-h"):
-			desc.help()
-		if (a == "clear"):
-			os.system('clear')
-		else:
-			print("Cant find the comand")
+			
+			if (a == 'exit' or a == "quit"): 
+				break
+			if (a == "-help" or a == "-h"):
+				desc.help()
+			if (a == "clear"):
+				os.system('clear')
+			else:
+				print("Cant find the comand")
+	except KeyboardInterrupt:
+		print("\n")
+		sys.exit()
 
 main()
 
