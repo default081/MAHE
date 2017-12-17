@@ -37,8 +37,7 @@ def main():
 				desc.help()
 			if (a == "clear"):
 				os.system('clear')
-			else:
-				print("Cant find the comand")
+
 	except KeyboardInterrupt:
 		print("\n")
 		sys.exit()
