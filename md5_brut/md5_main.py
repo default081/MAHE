@@ -1,5 +1,3 @@
-
-
 # -*- coding: utf-8 -*-
 
 import hashlib
@@ -33,7 +31,7 @@ def md5_brut():
 
 		else:
 			print("-----password not found")
-md5_brut()
+# md5_brut()
 
 
 # e10adc3949ba59abbe56e057f20f883e == 123456

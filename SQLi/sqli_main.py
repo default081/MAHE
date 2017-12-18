@@ -25,4 +25,4 @@ def sqli_main():
 			print("\n")
 			sys.exit()
 
-sqli_main()
+# sqli_main()
