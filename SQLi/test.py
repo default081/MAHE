@@ -1,33 +1,17 @@
-# # from urllib import request, parse
-# from urllib import *
-
-# uri = "http://192.168.1.22/bWAPP/sqli_1.php?title=%27&action=search"
-# # arq = open("big.txt", "r").readlines()
-# g = "'"
-
-# http = request.Request(uri, data={'test':g, 'action':'submit'})
-# r = request.get(uri)
-# print(r.text)
-# # print(http.text)
-# # content = http.content
 
 
-# --------------------
-# import requests
-
-# url = 'https://www.google.com/'
-# r = requests.get(url)
-# print (r.text)
-
-# -----------------------------------
-# import requests
-# url = 'http://192.168.1.22/bWAPP/sqli_1.php?title=%27&action=search'
-# data = dict(name="'")
-
-# r = requests.post(url, data=data, allow_redirects=True)
-# print r.content
-
+import re
 import requests
 url = "http://www.tunesoman.com/product.php?id=200%27"
-r = requests.get(url)
-print (r.content)
+r = requests.get(url).text 
+print (r)
+strings = ['MySQL', 'one']
+ 
+for string in strings:
+    match = re.search(string, r)
+    if match:
+        print('Found "{}" in "{}"'.format(string, r))
+        text_pos = match.span()
+        print(r[match.start():match.end()])
+    else:
+        print('Did not find "{}"'.format(string))
