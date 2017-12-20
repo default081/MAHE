@@ -11,7 +11,7 @@ def md5_brut():
 
 	try:
 		if(pwfile == "default"):
-			pwfile = open("/root/prog/pycode/MAHE/auxiliary/dictionary/password.txt", "r",  encoding='utf-8', errors='ignore')
+			pwfile = open("../auxiliary/dictionary/password.txt", "r",  encoding='utf-8', errors='ignore')
 		else:
 			pwfile = open(pwfile, "r", encoding='utf-8', errors='ignore')
 
@@ -21,14 +21,15 @@ def md5_brut():
 	for password in pwfile:
 		fileemd5 = hashlib.md5(password.encode().strip()).hexdigest()
 
-		print("trying password number %s " %(password.encode()) + fileemd5)		
+		# print("trying password number %s " %(password.encode()) + fileemd5)		
 
 		if (pass_in == fileemd5):
 			print("\n Match found. \n Password is: %s" % password)
 			break
 
 		else:
-			print("-----password not found")
+			# print("-----password not found")
+			pass
 md5_brut()
 
 
