@@ -11,7 +11,9 @@ def md5_brut():
 
 	try:
 		if(pwfile == "default"):
-			pwfile = open("../auxiliary/dictionary/password.txt", "r",  encoding='utf-8', errors='ignore')
+			pwfile = open(pwfile, "r", encoding='utf-8', errors='ignore')
+
+			# pwfile = open("../../auxiliary/dictionary/password.txt", "r",  encoding='utf-8', errors='ignore')
 		else:
 			pwfile = open(pwfile, "r", encoding='utf-8', errors='ignore')
 
@@ -30,7 +32,7 @@ def md5_brut():
 		else:
 			# print("-----password not found")
 			pass
-md5_brut()
+# md5_brut()
 
 
 # e10adc3949ba59abbe56e057f20f883e == 123456

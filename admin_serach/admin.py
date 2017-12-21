@@ -41,6 +41,8 @@ def brut_part_two(ev):
 def admin_main():
 	start_time = datetime.now()
 	syte = input("-> Enter URI: ")
+	dict1 = input(" -> Please enter the first dictionary: ")
+	dict2 = input(" -> Please enter the second dictionary: ")
 	thr = threading.Thread(target=brut_part_1, args=(event, )) # initiate threading n1
 	thr2 = threading.Thread(target=brut_part_two, args=(event2, )) #initiate threading n2
 
