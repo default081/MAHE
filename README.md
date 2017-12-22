@@ -9,3 +9,6 @@ Facts:
 	-Is writed in Python 3,6.
 	-Os platform Linux, FreeBsd, OSX, Windows. 
 	-IS easy to find the files.
+
+you need to install:
+	- requests module

@@ -8,7 +8,7 @@ event = threading.Event()
 event2 = threading.Event()
 
 def func(ev, urll):
-	File = open("directory_brut/dictionare/dict1.txt", 'r')
+	File = open("dictionare/dict1.txt", 'r')
 	for line in File:
 		address = urll + line
 		try:
@@ -18,13 +18,14 @@ def func(ev, urll):
 				print ("-------*--------")
 		except urllib.error.HTTPError as error:
 			if(error.code == 404):
-				print (address, error.code ,"--error")
-				print ("-------*--------")
+				pass
+				# print (address, error.code ,"--error")
+				# print ("-------*--------")
 			pass
 
 
 def func2(ev, urll):
-	File = open("directory_brut/dictionare/dict2.txt", 'r')
+	File = open("dictionare/dict2.txt", 'r')
 	
 	for line in File:
 		address = urll + line
@@ -34,8 +35,9 @@ def func2(ev, urll):
 			print ("-------*--------")
 		except urllib.error.HTTPError as error:
 			if(error.code == 404):
-				print (address, error.code ,"--error")
-				print ("-------*--------")
+				pass
+				# print (address, error.code ,"--error")
+				# print ("-------*--------")
 			pass
  
 def call():
@@ -61,7 +63,7 @@ def call():
 	end_time = datetime.now()
 	print('Duration time: {}'.format(end_time - start_time) + "\n")
 
-
+call()
 
 # -----------------------------------
 # import urllib.request
