@@ -7,12 +7,18 @@ MAHE: multi-platform accessible hacker environment
 # -*- coding: utf-8 -*- 
 import sys
 import os
-import keyboard 
 
-import auxiliary.description as desc
-import directory_brut.url_brut as brut
-import admin_serach.admin as admin
-import md5_brut.md5_main as md5_crack
+try:
+	import auxiliary.description as desc
+	import directory_brut.url_brut as brut
+	import admin_serach.admin as admin
+	import md5_brut.md5_main as md5_crack
+	import site_info as site_info
+	import SQLi as SQLi
+
+except:
+	print("Cant open some module, please check state of files!")
+	sys.exit(0)
 
 desc.ASCII_ART()
 

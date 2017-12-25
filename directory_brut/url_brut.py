@@ -63,7 +63,7 @@ def call():
 	end_time = datetime.now()
 	print('Duration time: {}'.format(end_time - start_time) + "\n")
 
-call()
+# call()
 
 # -----------------------------------
 # import urllib.request

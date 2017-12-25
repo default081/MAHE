@@ -13,7 +13,6 @@ def ASCII_ART():
 	# sys.stdout.write(RESET)
 	
 	print(datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
-	print("Created by Vadim Lepilov and David Cherednik")
 	print ("""
 	███╗   ███╗ █████╗ ██╗  ██╗███████╗	   
 	████╗ ████║██╔══██╗██║  ██║██╔════╝    

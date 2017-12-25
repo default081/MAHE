@@ -6,8 +6,6 @@ import sys
 event = threading.Event()
 event2 = threading.Event()
 
-
-
 def brut_part_1(ev, urll, d1):
 
 	if(d1 == "default"):
@@ -77,4 +75,4 @@ def admin_main():
 	end_time = datetime.now()
 	print('Duration: {}'.format(end_time - start_time))
 
-admin_main()
+# admin_main()
