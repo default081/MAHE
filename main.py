@@ -8,17 +8,17 @@ MAHE: multi-platform accessible hacker environment
 import sys
 import os
 
-try:
-	import auxiliary.description as desc
-	import directory_brut.url_brut as brut
-	import admin_serach.admin as admin
-	import md5_brut.md5_main as md5_crack
-	import site_info as site_info
-	import SQLi as SQLi
-
-except:
-	print("Cant open some module, please check state of files!")
-	sys.exit(0)
+# try:
+import auxiliary.description as desc
+import directory_brut.url_brut as brut
+import admin_serach.admin as admin
+import md5_brut.md5_main as md5_crack
+import site_info as site_info
+import SQLi as SQLi
+import site_info.main_info as header
+# except:
+# 	print("Cant open some module, please check state of files!")
+# 	sys.exit(0)
 
 desc.ASCII_ART()
 
@@ -35,7 +35,9 @@ def main():
 
 			if (a == "md5 compare"): #md5 hash compare
 				md5_crack.md5_brut()
-
+                        
+			if (a == "get header"):
+				header.main_info()
 			
 			if (a == 'exit' or a == "quit"): 
 				break

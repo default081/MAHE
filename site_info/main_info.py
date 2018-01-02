@@ -1,4 +1,4 @@
-import requests
+"""import requests
 import re
 def define():
 	url = ""
@@ -15,29 +15,30 @@ def define():
     else:
         print('Did not find "{}"'.format(string))
 
-define()
+define()"""
 # ---------------------------------------------------
-# import requests
+import requests
 
-# def get_header():
-# 	print("Header:")
-# 	print("-------------------------------------------------------")
-# 	file = open("testfile.txt","w") 
+def get_header(urii):
+	print("Header:")
+	print("-------------------------------------------------------")
+	file = open("testfile.txt","w") 
 
-# 	r = requests.get('https://www.tutorialspoint.com')
+	r = requests.get(urii)
 
-# 	file.write(str(r.headers))
-# 	file.close() 
+	file.write(str(r.headers))
+	file.close() 
 
-# 	a = open("testfile.txt","r")
-# 	print (a.read().replace(", ", "\n"))
-# 	a.close()
-# 	print("-------------------------------------------------------")
-# 	print("\n")
+	a = open("testfile.txt","r")
+	print (a.read().replace(", ", "\n"))
+	a.close()
+	print("-------------------------------------------------------")
+	print("\n")
 	
 
-# def main_info():
-# 	get_header()
+def main_info():
+    uri = input(" -> Enter URI: ")
+    get_header(uri)
 
 
 
