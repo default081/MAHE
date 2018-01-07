@@ -1,3 +1,4 @@
+administrator/
 modelsearch/login.php
 moderator.php
 moderator/login.php

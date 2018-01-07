@@ -1,6 +1,6 @@
 admin.php
 admin/
-administrator/
+
 moderator/
 webadmin/
 adminarea/

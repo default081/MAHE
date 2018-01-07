@@ -22,23 +22,26 @@ import site_info.main_info as header
 
 desc.ASCII_ART()
 
+def call():
+	print (a)
+	call()
+	desc.ASCII_ART()
 def main():
+    
 	try:
 		while True:
 			a = input('[MAHE] <=> ')
-
-			if (a == "adm search"): #admin fazzer
+			if(a == "adm search"): #admin fazzer
 				admin.admin_main()
-
 			if (a == "scan"): #directory brut
 				brut.call()
 
 			if (a == "md5 compare"): #md5 hash compare
 				md5_crack.md5_brut()
-                        
-			if (a == "get header"):
+		                        
+			if (a == "get header"): 
 				header.main_info()
-			
+				
 			if (a == 'exit' or a == "quit"): 
 				break
 			if (a == "-help" or a == "-h"):

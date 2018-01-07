@@ -75,4 +75,4 @@ def admin_main():
 	end_time = datetime.now()
 	print('Duration: {}'.format(end_time - start_time))
 
-# admin_main()
+admin_main()
