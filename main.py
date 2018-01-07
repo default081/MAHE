@@ -22,6 +22,10 @@ import site_info.main_info as header
 
 desc.ASCII_ART()
 
+def call():
+	print (a)
+	call()
+	desc.ASCII_ART()
 def main():
     
 	try:
