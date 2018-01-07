@@ -1,3 +1,4 @@
+phpmyadmin
 info.php
 !
 !_archives
