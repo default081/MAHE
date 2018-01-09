@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 import hashlib
 import sys
 import base64
@@ -43,7 +42,8 @@ def main():
 	if(ch == '2'):
 		base64_main()
 
-main()
+# main()
+
 # /home/bat/prog/pycode/MAHE/hash_brut/dict/password.txt
 # e10adc3949ba59abbe56e057f20f883e == 123456
 # # df3939f11965e7e75dbc046cd9af1c67  == dad

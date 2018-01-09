@@ -32,7 +32,6 @@ def main():
 				admin.admin_main()
 			if (a == "scan"): #directory brut
 				brut.call()
-
 			if(a == "decode hash"):
 				hash_crack.main()
 
@@ -52,7 +51,6 @@ def main():
 		sys.exit()
 
 main()
-
 
 
 
