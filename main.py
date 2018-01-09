@@ -21,7 +21,8 @@ import site_info.main_info as header
 # 	sys.exit(0)
 
 desc.ASCII_ART()
-
+def ded():
+	pass
 def main():
     
 	try:
