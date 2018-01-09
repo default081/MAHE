@@ -12,7 +12,7 @@ import os
 import auxiliary.description as desc
 import directory_brut.url_brut as brut
 import admin_serach.admin as admin
-import md5_brut.md5_main as md5_crack
+import hash_brut.hash_main as hash_crack
 import site_info as site_info
 import SQLi as SQLi
 import site_info.main_info as header
@@ -32,8 +32,9 @@ def main():
 			if (a == "scan"): #directory brut
 				brut.call()
 
-			if (a == "md5 compare"): #md5 hash compare
-				md5_crack.md5_brut()
+			if(a == "decode hash"):
+				hash_crack.main()
+
 		                        
 			if (a == "get header"): 
 				header.main_info()

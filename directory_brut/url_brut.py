@@ -49,7 +49,7 @@ def func2(ev, urll):
 				# print (address, error.code ,"--error")
 				# print ("-------*--------")
 			pass
- 
+
 def call():
 	start_time = datetime.now()
 
@@ -77,7 +77,7 @@ def call():
 	all_find_direct = thread1_directoty + thread2_directoty
 	print("find " + str(all_find_direct) + " open directoris")
 	print()
-call()
+# call()
 
 # http://192.168.1.142/
 # -----------------------------------
