@@ -1,4 +1,12 @@
 Options:
 	-h, --help : Show basic help message and 
 	exit/quit : exit from the program
+	clear : clear the screan
+	
+	decode hash : decode base64 or md5 hash.
+		1 : decode md5 hash
+		2 : decode base64
+	
+	get info : get info from the site architecture
+	
 

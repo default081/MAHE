@@ -8,17 +8,19 @@ MAHE: multi-platform accessible hacker environment
 import sys
 import os
 
-# try:
-import auxiliary.description as desc
-import directory_brut.url_brut as brut
-import admin_serach.admin as admin
-import hash_brut.hash_main as hash_crack
-import site_info as site_info
-import SQLi as SQLi
-import site_info.main_info as header
-# except:
-# 	print("Cant open some module, please check state of files!")
-# 	sys.exit(0)
+try:
+	import auxiliary.description as desc
+	import directory_brut.url_brut as brut
+	import admin_serach.admin as admin
+	import hash_brut.hash_main as hash_crack
+	import site_info as site_info
+	import SQLi as SQLi
+	import site_info.main_info as header
+except:
+	print("Cant open some module, please check state of files!")
+	sys.exit(0)
+
+os.system('clear')
 
 desc.ASCII_ART()
 def ded():
@@ -34,9 +36,7 @@ def main():
 				brut.call()
 			if(a == "decode hash"):
 				hash_crack.main()
-
-		                        
-			if (a == "get header"): 
+			if (a == "get info"): 
 				header.main_info()
 				
 			if (a == 'exit' or a == "quit"): 
