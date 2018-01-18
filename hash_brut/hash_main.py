@@ -18,8 +18,7 @@ def md5_brut():
 
 	for password in pwfile:
 		fileemd5 = hashlib.md5(password.encode().strip()).hexdigest()
-		# print("trying password number %s " %(password.encode()) + fileemd5)	
-			
+					
 		if (pass_in == fileemd5):
 			print("\n Match found. \n Password is: %s" % password)
 			break
@@ -45,11 +44,9 @@ def main():
 # main()
 
 # /home/bat/prog/pycode/MAHE/hash_brut/dict/password.txt
-# e10adc3949ba59abbe56e057f20f883e == 123456
 # # df3939f11965e7e75dbc046cd9af1c67  == dad
 # # 5f4dcc3b5aa765d61d8327deb882cf99  == password
 # d8578edf8458ce06fbc5bb76a58c5ca4 == qwerty
-# /home/bat/prog/pycode/MAHE/hash_brut/dict.txt
 
 # b'cGFzc3dvcmQ='
 # cGFzc3dvcmQ=  == password
