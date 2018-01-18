@@ -19,8 +19,7 @@ import site_info.main_info as header
 os.system('clear')
 
 desc.ASCII_ART()
-def ded():
-	pass
+
 def main():
     
 	try:
@@ -34,6 +33,8 @@ def main():
 				hash_crack.main()
 			if (a == "get info"): 
 				header.main_info()
+			# if(a == "combine"):
+			# 	com.main()
 				
 			if (a == 'exit' or a == "quit"): 
 				break
