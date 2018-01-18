@@ -8,17 +8,13 @@ MAHE: multi-platform accessible hacker environment
 import sys
 import os
 
-try:
-	import auxiliary.description as desc
-	import directory_brut.url_brut as brut
-	import admin_serach.admin as admin
-	import hash_brut.hash_main as hash_crack
-	import site_info as site_info
-	import SQLi as SQLi
-	import site_info.main_info as header
-except:
-	print("Cant open some module, please check state of files!")
-	sys.exit(0)
+import auxiliary.description as desc
+import directory_brut.url_brut as brut
+import admin_serach.admin as admin
+import hash_brut.hash_main as hash_crack
+import site_info as site_info
+import SQLi as SQLi
+import site_info.main_info as header
 
 os.system('clear')
 

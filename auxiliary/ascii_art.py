@@ -11,7 +11,6 @@ RESET = "\033[0;0m"
 
 def ascii_a():
 	color_num = random.random()*6
-	print(color_num)
 
 	if(int(color_num) == 0):
 		print ("""

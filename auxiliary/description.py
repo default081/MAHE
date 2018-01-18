@@ -1,8 +1,6 @@
 import datetime
 from termcolor import colored, cprint
 import sys
-import random
-# import ascii_art as art
 from . import ascii_art as art
 
 version = 0.01
@@ -16,7 +14,7 @@ def ASCII_ART():
 	
 	print(datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
 	art.ascii_a()
-	
+
 # 	print ("""
 # 	███╗   ███╗ █████╗ ██╗  ██╗███████╗	   
 # 	████╗ ████║██╔══██╗██║  ██║██╔════╝    
