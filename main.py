@@ -17,7 +17,10 @@ import SQLi as SQLi
 import site_info.main_info as header
 
 os.system('clear')
-
+def etst():
+	pass
+	pass
+	pass
 desc.ASCII_ART()
 
 def main():
