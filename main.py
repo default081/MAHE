@@ -17,38 +17,34 @@ import SQLi as SQLi
 import site_info.main_info as header
 
 os.system('clear')
-def etst():
-	pass
-	pass
-	pass
+
 desc.ASCII_ART()
 
 def main():
-    
-	try:
-		while True:
-			a = input('[MAHE] <=> ')
-			if(a == "adm search"): #admin fazzer
-				admin.admin_main()
-			if (a == "scan"): #directory brut
-				brut.call()
-			if(a == "decode hash"):
-				hash_crack.main()
-			if (a == "get info"): 
-				header.main_info()
+    try:
+        while True:
+            a = input('[MAHE] <=> ')
+            if(a == "adm search"): #admin fazzer
+                admin.admin_main()
+            if (a == "scan"): #directory brut
+                brut.call()
+            if(a == "decode hash"):
+                hash_crack.main()
+            if (a == "get info"):
+                header.main_info()
 			# if(a == "combine"):
 			# 	com.main()
-				
-			if (a == 'exit' or a == "quit"): 
-				break
-			if (a == "-help" or a == "-h"):
-				desc.help()
-			if (a == "clear"):
-				os.system('clear')
 
-	except KeyboardInterrupt:
-		print("\n")
-		sys.exit()
+            if (a == 'exit' or a == "quit"):
+                break
+            if (a == "-help" or a == "-h"):
+                desc.help()
+            if (a == "clear"):
+                os.system('clear')
+
+    except KeyboardInterrupt:
+        print("\n")
+        sys.exit()
 
 main()
 
